@@ -1,7 +1,7 @@
-package com.socialnetwork.service.user;
+package casestudy.socialnetwork.service.user;
 
 
-import com.socialnetwork.model.User;
+import casestudy.socialnetwork.model.User;
 
 import java.util.Optional;
 

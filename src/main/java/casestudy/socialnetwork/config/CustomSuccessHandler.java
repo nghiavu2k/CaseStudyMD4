@@ -1,4 +1,4 @@
-package com.socialnetwork.config;
+package casestudy.socialnetwork.config;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
@@ -42,7 +42,7 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
         } else if (isUser(roles)) {
             url = "/profile";
         } else {
-            url = "/nodoor6";
+            url = "/no-door";
         }
 
         return url;

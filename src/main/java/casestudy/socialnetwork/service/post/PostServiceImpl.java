@@ -1,8 +1,8 @@
-package com.socialnetwork.service.post;
+package casestudy.socialnetwork.service.post;
 
-import com.socialnetwork.model.Post;
-import com.socialnetwork.model.User;
-import com.socialnetwork.repository.PostRepository;
+import casestudy.socialnetwork.model.Post;
+import casestudy.socialnetwork.model.User;
+import casestudy.socialnetwork.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,8 +23,8 @@ public class PostServiceImpl implements PostService{
     }
 
     @Override
-    public void remove(Post post) {
-        postRepository.delete(post);
+    public void remove(Long id) {
+        postRepository.deleteById(id);
     }
 
     @Override

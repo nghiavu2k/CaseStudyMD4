@@ -1,7 +1,7 @@
-package com.socialnetwork.repository;
+package casestudy.socialnetwork.repository;
 
 
-import com.socialnetwork.model.User;
+import casestudy.socialnetwork.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {

@@ -1,8 +1,8 @@
-package com.socialnetwork.controller;
+package casestudy.socialnetwork.controller;
 
-import com.socialnetwork.model.Post;
-import com.socialnetwork.service.post.PostService;
-import com.socialnetwork.service.user.UserService;
+import casestudy.socialnetwork.model.Post;
+import casestudy.socialnetwork.service.post.PostService;
+import casestudy.socialnetwork.service.user.UserService;
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
 import org.cloudinary.json.JSONObject;
@@ -11,10 +11,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -109,7 +106,7 @@ public class PostController {
 
     @GetMapping("/delete/{id}")
     public String deletePost(@PathVariable("id") Long id) {
-        postService.remove(postService.findById(id).get());
+        postService.remove(id);
         return "redirect:/profile";
     }
 }

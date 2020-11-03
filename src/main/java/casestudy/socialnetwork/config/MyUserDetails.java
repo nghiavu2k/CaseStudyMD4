@@ -1,6 +1,6 @@
-package com.socialnetwork.config;
+package casestudy.socialnetwork.config;
 
-import com.socialnetwork.model.User;
+import casestudy.socialnetwork.model.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

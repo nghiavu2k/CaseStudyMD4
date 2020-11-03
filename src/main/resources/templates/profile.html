@@ -122,11 +122,12 @@
                                     </div>
 
                                     <div class="panel-body">
-                                        <p><img th:src="${p.linkImage}" style="position: relative; left: 20%" sizes="200px"></p>
+                                        <p><img th:src="${p.linkImage}" style="position: relative; left: 20%"
+                                                sizes="200px"></p>
                                         <div class="clearfix"></div>
                                         <hr>
                                         <div th:text="${p.caption}"></div>
-                                        <div><a th:href="'/post/delete/'+${p.id}">Delete</a></div>
+                                        <div><a th:href="@{/post/delete/__${p.id}__}">Delete</a></div>
                                     </div>
                                 </div>
 

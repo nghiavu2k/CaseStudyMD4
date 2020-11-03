@@ -1,4 +1,4 @@
-package com.socialnetwork.model;
+package casestudy.socialnetwork.model;
 
 import lombok.Data;
 import org.springframework.web.multipart.MultipartFile;

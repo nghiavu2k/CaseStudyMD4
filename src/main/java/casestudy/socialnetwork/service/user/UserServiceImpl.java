@@ -1,7 +1,7 @@
-package com.socialnetwork.service.user;
+package casestudy.socialnetwork.service.user;
 
-import com.socialnetwork.model.User;
-import com.socialnetwork.repository.UserRepository;
+import casestudy.socialnetwork.model.User;
+import casestudy.socialnetwork.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;

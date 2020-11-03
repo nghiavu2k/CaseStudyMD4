@@ -1,9 +1,9 @@
-package com.socialnetwork.controller;
+package casestudy.socialnetwork.controller;
 
-import com.socialnetwork.model.Post;
-import com.socialnetwork.model.User;
-import com.socialnetwork.service.post.PostService;
-import com.socialnetwork.service.user.UserService;
+import casestudy.socialnetwork.service.post.PostService;
+import casestudy.socialnetwork.model.Post;
+import casestudy.socialnetwork.model.User;
+import casestudy.socialnetwork.service.user.UserService;
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
 import org.cloudinary.json.JSONObject;
